@@ -3,9 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Web Fundamentals | BYU-Idaho</title>
-</head>
+    <title>WDD 131 - Dynamic Web Fundamentals - Emanuel Muñoz Torigino</title>
+    <meta name="description" content="A course assignment portal of WDD 131 – Dynamic Web Fundamentals by Emanuel Muñoz Torigino"> <!-- less than 150 characters as a good practice of SEO-->
+    <meta name="author" content="Emanuel Muñoz Torigino">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+</head> 
+
 <body>
-    <h1>Dynamic Web Fundamentals | BYU-Idaho</h1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Emanuel Muñoz T.</h1>
+        <nav>
+            <ul class="nav">
+                <li class="nav-li"><a href="https://www.linkedin.com/in/emanuelmunoztorigino/">LinkedIn</a></li>
+                <li ><a href="https://byui.instructure.com/" target="_blank">I-Learn</a></li>
+                <li ><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/3?lang=eng&id=p24-p30#p24" target="_blank">Fav. Scripture</a></li>
+                <li ><a href="#">Final Project</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="sections">
+            <section class="card">
+                <h2>About Me</h2>
+            </section>
+
+            <section class="card">
+            <h2>Web Dev Resourses</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/es/" target="_blank">Mozilla Developer Network</a></li>
+                <li><a href="" target="_blank"></a></li>
+                <li><a href="" target="_blank"></a></li>
+            </ul>
+            </section>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="flag-container">
+                <div class="container-AR-flag">
+                    <div class="first-lightblue-color-flag"></div>
+                    <div class="white-middle-color-flag"></div>
+                    <div class="sun-center-color-flag"></div>
+                    <div class="last-lightblue-color-flag"></div>
+                </div>            
+        </div>
+        <div>
+        <p>&copy;<span id="year"></span> Emanuel Muñoz Torigino - Argentina</p>
+        <p>WDD 131 - Brigham Young University | <a href="https://www.byui.edu/" target="_blank">Idaho</a></p>
+        <p id="lastModified"></p>
+        </div>
+    </footer>
+
+
+    <script src="scripts/getDates.js"></script>
 </body>
 </html>

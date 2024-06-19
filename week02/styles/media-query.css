@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header,
+main,
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 3px solid #bbb;
+    padding: 1rem;
+    background: linear-gradient(in oklab, rgba(137, 137, 244, 0.7), rgb(45, 147, 181));
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section {
+    padding: 1rem ;
+    background-color: rgba(255, 255, 255, 0.8);
+}
