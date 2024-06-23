@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album | WDD 131</title>
+
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+</head>
+<body>
+
+    <header>
+        <button id="ham-menu"></button>
+        <h1>Temple Album</h1>
+        <nav>
+        <ul id="nav-container">
+                <li class="nav-filter"><a href="">Home</a></li>
+                <li class="nav-filter"><a href="">Old</a></li>
+                <li class="nav-filter"><a href="">New</a></li>
+                <li class="nav-filter"><a href="">Large</a></li>
+                <li class="nav-filter"><a href="">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+    <main>
+        <h2 id="filter-heading"></h2>
+        <div id="temple-album">
+            <figure>
+                <img srcset= " images/bs-as-temple.jpg 320w,
+                              images/bs-as-temple-medium.jpg 480w,
+                              images/bs-as-temple-large.jpg 800w"
+                        sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"
+                        src="images/bs-as-temple-large.jpg"
+                        alt="Buenos Aires, Argentina Temple" style="width:100%">
+
+                <figcaption>Buenos Aires - Argentina, temple</figcaption>
+              </figure>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="flag-container">
+                <div class="container-AR-flag">
+                    <div class="first-lightblue-color-flag"></div>
+                    <div class="white-middle-color-flag"></div>
+                    <div class="sun-center-color-flag"></div>
+                    <div class="last-lightblue-color-flag"></div>
+                </div>            
+        </div>
+        <div>
+        <p>&copy;<span id="year"></span> Emanuel Muñoz Torigino - Argentina</p>
+        <p>WDD 131 - Brigham Young University | <a href="https://www.byui.edu/" target="_blank">Idaho</a></p>
+        <p id="lastModified"></p>
+        </div>
+    </footer>
+
+    <script src="scripts/temples.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+</body>
+
+</html>
