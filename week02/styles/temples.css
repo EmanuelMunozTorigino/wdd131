@@ -2,13 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+    --latoFont: "lato"; 
+
 }
+
+img {
+    width: 100%;
+}
+
+
 
 header {
     background-color: rgba(165, 25, 165,0.8);   
+    font-family: sans-serif ;
 }
 
 h1 {
+    color: rgba(1, 1, 1, 1);
     margin-left: .5rem;
     padding: .2rem;
 }
@@ -47,7 +58,7 @@ h1 {
 	text-align: center;
 	text-decoration: none;
 	color: rgb(255, 255, 255);
-    color: rgb(138, 57, 0);
+    color: rgb(255, 177, 122,1);
 }
 .nav-filter a:hover {
 	background-color: #bbb;
@@ -59,25 +70,31 @@ h1 {
 	display: block;
 }
 
-
+#temple-album {
+    margin: .5rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+}
 
 
 /*Main layout*/
 
 main {
+    text-align: center;
     max-width: 80%;
     margin: 0 auto;
+    font-family: "lato";
 }
 
 figure {
     border: 1px rgb(22, 22, 22) solid;
     padding: 4px;
-    margin: .5rem auto;
   }
   
   figcaption {
-    background-color: rgb(51, 51, 51);;
-    color: rgb(138, 57, 0);
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 177, 122,1);
     font-size: large;
     font-weight: bold;
     padding: .4rem;
@@ -91,6 +108,7 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     background-color: rgba(165, 25, 165,0.8);
+    font-family: sans-serif;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -104,8 +122,8 @@ footer p {
 
 footer p a {
     text-decoration: none;
-    border-bottom: rgb(138, 57, 0) solid 2px;
-    color: rgb(138, 57, 0);
+    border-bottom: rgb(255, 177, 122,1) solid 2px;
+    color: rgb(1, 1, 1, 1);
     font-weight: bold;
     transition: 1000ms;
 }
