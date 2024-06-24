@@ -45,6 +45,7 @@ nav a:hover {
 
 
 .sections {
+        margin: 0 1.5rem;
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-gap: .5rem;
@@ -74,8 +75,34 @@ nav a:hover {
     padding: 1rem;
 }
 
-.card > ul > li > a {
-    margin: 1rem;
+.dev-src-link {
+    display: inline-block;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    color:#7d2f2f;
+    font-size: larger;
+    font-weight: bold;
+    transition: 500ms;
+}
+
+.dev-src-link:hover {
+    color:rgb(225, 191, 0);
+    transition: 1000ms;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.article-container {
+    display: flex;
+    padding: 1rem;
+    font-size: large;
+
+}
+
+.argentina-flag {
+    margin-right: 1rem;
 }
 
 footer {
