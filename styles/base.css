@@ -40,10 +40,12 @@ nav a:hover {
 }
 
 
-
+main {
+    max-width: 95%;
+    margin: 0 auto;
+ }
 
 .sections {
-        margin: 0 1.5rem;
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-gap: .5rem;
@@ -111,11 +113,10 @@ footer {
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: .5rem;
 }
 
 footer p {
-    margin: .2rem;
+    margin: .5rem;
     font-size: 1.2rem;
     color: rgb(185, 185, 185);
 }
