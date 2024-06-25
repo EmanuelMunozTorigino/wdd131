@@ -4,11 +4,8 @@
     box-sizing: border-box;
 }
 
-
-
-
 header {
-    background-color: #7d2f2f;
+    background-color: rgb(0,0,0);
 }
 
 
@@ -16,10 +13,11 @@ header h1 {
     padding: 1rem 0;
     text-align: center;
     font-size:x-large;
+    color: rgb(185, 185, 185);
 }
 
 header nav {
-    background-color: #897777;
+    background-color: rgb(110, 30, 30);
 }
 
 
@@ -34,11 +32,11 @@ header nav {
     text-decoration: none;
     font-size: larger;
     font-weight: 600;
-
+    color: rgb(38, 183, 193);
 }
 
 nav a:hover {
-    color: #7d2f2f;
+    color: rgb(166, 166, 166);
 }
 
 
@@ -62,9 +60,9 @@ nav a:hover {
 }
 
 .card > h2 {
-    background-color: #0d6d74;
+    background-color: rgb(110, 30, 30);
     border-bottom: 1.5px solid black;
-    color: #fff;
+    color: rgb(38, 183, 193);
     display: block;
     text-align: center;
     padding: .5rem 0;
@@ -108,19 +106,18 @@ nav a:hover {
 footer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    background-color: #7d2f2f;   
-    height: 20vh;
+    grid-template-rows: 1fr;
+    background-color: rgb(0,0,0);
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding: .5rem;
 }
 
 footer p {
-    margin: .1rem;
-    padding: .1rem;
+    margin: .2rem;
     font-size: 1.2rem;
-    color: black;
+    color: rgb(185, 185, 185);
 }
 
 
@@ -134,7 +131,7 @@ footer p {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border:  3px solid silver;
+    border: 3px solid silver;
     box-shadow: 2px 3px 7px black;
     overflow: hidden;
 }
