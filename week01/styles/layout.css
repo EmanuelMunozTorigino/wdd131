@@ -5,18 +5,19 @@
 }
 
 header {
+    background-color: rgb(56, 56, 56);
+    color: white;
+}
+header p{
 padding: 1rem;
-background-color: rgb(56, 56, 56);
-height: 13vh;
-color: white;
 }
 
 
 .nav-bar{
     display:flex;
     justify-content:space-around;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 0;
+    padding-top: 2rem;
     list-style-type: none;
 }
 
