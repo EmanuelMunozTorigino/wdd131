@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Country/Place Data </title>
+    <meta name="description" content="A one single page showing data and weather of a specific Place"> <!-- less than 150 characters as a good practice of SEO-->
+    <meta name="author" content="Emanuel Muñoz Torigino">
+
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+<body>
+    <header>
+        <h1>Argentina</h1>
+    </header>
+    <main>
+        <div class="hero-img-container">
+            <img src="" alt="">
+        </div>
+        <section class="data">
+           <h2>Data</h2>
+           <label for="area"></label>
+           <label for="population"></label>
+           <label for="capital"></label>
+           <label for="lang"></label>
+           <label for="currency"></label>
+           <label for="time-zone"></label> 
+           <label for="calling-code"></label> 
+           <label for="internet-tld"></label> 
+        </section>
+        <section class="weather">
+           <h2>Weather</h2>
+           <img src="images/weather.svg" alt="Weather Icon" width="100px" height="100px">
+           <label for="temperature"></label>
+           <label for="weather-condition"></label>
+           <label for="wind"></label>
+           <label for="wind-chill"></label>     
+        </section>
+    </main>
+    
+    <footer>
+        <div class="flag-container">
+                <div class="container-AR-flag">
+                    <div class="first-lightblue-color-flag"></div>
+                    <div class="white-middle-color-flag"></div>
+                    <div class="sun-center-color-flag"></div>
+                    <div class="last-lightblue-color-flag"></div>
+                </div>            
+        </div>
+        <div>
+        <p>&copy;<span id="year"></span> Emanuel Muñoz Torigino - Argentina</p>
+        <p>WDD 131 - Brigham Young University | <a href="https://www.byui.edu/" target="_blank">Idaho</a></p>
+        <p id="lastModified"></p>
+        </div>
+    </footer>
+<script src="scripts/place.js" defer></script>
+<script src="scripts/getdates.js" defer></script>
+</body>
+</html>
