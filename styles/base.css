@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -12,31 +11,42 @@ header {
 header h1 {
     padding: 1rem 0;
     text-align: center;
-    font-size:x-large;
-    color: rgb(185, 185, 185);
+    font-size: large;
+    color: #ffffff;
 }
 
-header nav {
-    background-color: rgb(110, 30, 30);
+
+h1,h2,h3 {
+    text-align: center;
 }
 
 
 .nav {
-    padding: .5rem 0;
+    background-color: rgb(65, 58, 58);
     display: flex; 
     justify-content: space-around;
     list-style-type: none;
+    padding: 0;
+}
+
+.nav li{
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 .nav a {
+    display: block;
     text-decoration: none;
-    font-size: larger;
+    font-size: large;
     font-weight: 600;
-    color: rgb(38, 183, 193);
+    color: #ffffff;
+    padding: .5rem 0;
 }
 
 nav a:hover {
-    color: rgb(166, 166, 166);
+    color: #000000;
+    background-color: rgb(202, 202, 202);
 }
 
 
@@ -50,57 +60,59 @@ main {
         grid-template-columns: 2fr 1fr;
         grid-gap: .5rem;
     }
-
-
-
+    
+    
+    
 .card {
-    border: 1.5px solid black;      /*#415541*/
-    background-color: beige;
+    border: 5px solid rgb(65, 58, 58);      /*#415541*/
     border-radius: 10px;
     margin: 2rem 0;
-    overflow: hidden;
 }
 
-.card > h2 {
-    background-color: rgb(110, 30, 30);
-    border-bottom: 1.5px solid black;
-    color: rgb(38, 183, 193);
+.card > h2 {    
+    background-color: rgb(65, 58, 58);
+    color: #ffffff;
     display: block;
     text-align: center;
     padding: .5rem 0;
 }
 
-.card > p {
-    text-align: center;
-    padding: 1rem;
+.card-web-src {
+    list-style-type: disc;
 }
 
 .dev-src-link {
     display: inline-block;
     text-decoration: none;
     padding: .5rem 1rem;
-    color:#7d2f2f;
-    font-size: larger;
+    color: #000000;
+    font-size: large;
     font-weight: bold;
-    transition: 500ms;
 }
 
 .dev-src-link:hover {
-    color:rgb(0, 0, 0);
-    transition: 1000ms;
+    color:rgba(0, 0, 0,.8);
 }
 
-.card h3 {
-    text-align: center;
+hr {
+    width: 80%;
+    margin: .5rem auto;
 }
 
 .article-container {
     display: flex;
     padding: 1rem;
     font-size: large;
-
+    
 }
-
+.article-container p {
+    padding: 1rem;
+    
+}
+.article-container img {
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px 2px;
+}
 .argentina-flag {
     margin-right: 1rem;
 }
@@ -110,6 +122,7 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     background-color: rgb(0,0,0);
+    padding: 1rem 0;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -124,12 +137,12 @@ footer p {
 
 footer p a {
     text-decoration: none;
-    color: rgb(255, 177, 122,1);
+    color: rgb(255, 255, 0);
     font-weight: bold;
     transition: 1000ms;
 }
 footer p a:hover {
-    color: rgb(255, 255, 0);
+    color: #ffffff;
     transition: 1000ms;
 }
 
