@@ -8,10 +8,6 @@ header {
 }
 
 
-main {
-    font-family: lato;
-}
-
 header h1 {
     padding: 1rem 0;
     text-align: center;
@@ -55,6 +51,7 @@ nav a:hover {
 
 
 main {
+    font-family: lato;
     max-width: 95%;
     margin: 0 auto;
  }
