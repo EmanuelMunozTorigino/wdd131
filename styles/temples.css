@@ -9,6 +9,7 @@
 
 img {
     width: 100%;
+    height: auto;
 }
 
 
@@ -88,10 +89,14 @@ main {
 }
 
 figure {
-    border: 1px rgb(22, 22, 22) solid;
-    padding: 4px;
-  }
-  
+    border: 2px rgb(182, 174, 174) solid;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+figure img:hover {
+    filter: contrast(50%);
+}
   figcaption {
     background-color: rgb(51, 51, 51);
     color: rgb(255, 177, 122,1);

@@ -10,8 +10,11 @@ btn.addEventListener("click", () => {
 
     const deleteBtn = document.createElement("button");
 
+    deleteBtn.setAttribute("ariaLabel", `Delete ${input.value}`);
+
     liBookName.textContent = input.value;
-    deleteBtn.textContent = "❌";
+
+    deleteBtn.textContent = "X";
 
     liBookName.append(deleteBtn);
     list.append(liBookName);
