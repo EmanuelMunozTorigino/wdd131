@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 - Country/Place Data </title>
+
     <meta name="description" content="A one single page showing data and weather of a specific Place"> <!-- less than 150 characters as a good practice of SEO-->
     <meta name="author" content="Emanuel Muñoz Torigino">
-
+    
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@500&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header>
@@ -15,38 +22,35 @@
     </header>
     <main>
         <div class="hero-img-container">
-            <img src="" alt="">
-        </div>
+            <picture>
+                <!-- Imagen para pantallas pequeñas (menos de 600px) -->
+                <source srcset="images/arg-culture-mobile.jpg" media="(max-width: 599px)">
+                <!-- Imagen para pantallas grandes (600px o más) -->
+                <source srcset="images/obelisc.webp" media="(min-width: 600px)">
+                <!-- Imagen por defecto en caso de que no se cumpla ninguna de las condiciones anteriores -->
+                <img src="images/bs-as-temple-large.jpg" alt="Responsive Image">
+              </picture>
         <section class="data">
-           <h2>Data</h2>
-           <label for="area"></label>
-           <label for="population"></label>
-           <label for="capital"></label>
-           <label for="lang"></label>
-           <label for="currency"></label>
-           <label for="time-zone"></label> 
-           <label for="calling-code"></label> 
-           <label for="internet-tld"></label> 
+            <h2>Data</h2>
+            <p><b>Area: </b>2.766,89 km<sup>2</sup> </p>
+            <p><b>Population: </b>approx. 44.5 Million people</p>
+            <p><b>Language:</b> Spanish</p>
+            <p><b>Currency: </b>Argentine peso (ARS)</p>
+            <p><b>Time Zone: </b>Argentina Time(ART), UTC-3</p>
+            <p><b>Calling Code: </b>+54</p>
         </section>
         <section class="weather">
-           <h2>Weather</h2>
-           <img src="images/weather.svg" alt="Weather Icon" width="100px" height="100px">
-           <label for="temperature"></label>
-           <label for="weather-condition"></label>
-           <label for="wind"></label>
-           <label for="wind-chill"></label>     
+           <h2 class="weather-heading">Weather</h2>
+           <img class="weather-svg" src="images/weather.svg" alt="Weather Icon" width="100" height="100">
+           <p><b>Temperature: </b>22°C</p>
+           <p><b>condition: </b>Sunny skies</p>
+           <p><b>Wind: </b>13 km/h</p>
+           <p id="windChill"></p>     
         </section>
+    </div>
     </main>
     
     <footer>
-        <div class="flag-container">
-                <div class="container-AR-flag">
-                    <div class="first-lightblue-color-flag"></div>
-                    <div class="white-middle-color-flag"></div>
-                    <div class="sun-center-color-flag"></div>
-                    <div class="last-lightblue-color-flag"></div>
-                </div>            
-        </div>
         <div>
         <p>&copy;<span id="year"></span> Emanuel Muñoz Torigino - Argentina</p>
         <p>WDD 131 - Brigham Young University | <a href="https://www.byui.edu/" target="_blank">Idaho</a></p>

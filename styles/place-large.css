@@ -1,0 +1,16 @@
+@media screen and (min-width: 650px) {
+
+.hero-img-container picture img{
+    max-width: 100%;
+    width: 1350px;
+    height: auto;
+}
+
+.weather-heading::after {
+    content: "⛅";
+    display: inline;
+}
+.weather-svg {
+    display: none;
+}
+}
