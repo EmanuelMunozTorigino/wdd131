@@ -1,0 +1,40 @@
+
+
+body {
+    background-color: beige;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    padding: .5rem;
+    filter: drop-shadow(5px 5px 3px black);
+    opacity: .7;
+    transition: 500ms;
+    animation: fade 15s;
+}
+
+img:hover {
+    opacity: 1;
+    scale: .9;
+    transition: 1000ms;
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

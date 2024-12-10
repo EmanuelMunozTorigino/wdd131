@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading for images</title>
+
+    <meta name="author" content="Emanuel Muñoz Torigino">
+    <meta name="description" content="Page focus on practice lazy loading images..">
+
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+
+</head>
+<body>
+    <header>
+        <h1>Cats Lovers here..!</h1>
+    </header>
+    <main>
+        <div>
+        <img src="images/cat6.jpg" alt="A random cat" width="400" height="600" >
+        <img src="images/cat1.webp" alt="A random cat" width="400" height="600" loading="lazy">
+        <img src="images/cat2.webp" alt="A random cat" width="400" height="600" loading="lazy">
+        <img src="images/cat3.jpg" alt="A random cat" width="400" height="600" loading="lazy">
+        <img src="images/cat4.jpg" alt="A random cat" width="400" height="600" loading="lazy">
+        <img src="images/cat5.jpg" alt="A random cat" width="400" height="600" loading="lazy">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year"></span> Emanuel Muñoz Torigino - Argentina</p>
+        <p>Brigham Young University | Idaho</p>
+        <p class="lastModified-p .montserrat-para" id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src=""></script>
+</body>
+</html>
