@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+.table {
+    margin: 10px auto;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: thin solid tan;
+}
+
+.table-title {
+    padding: 5px;
+    background-color: rgba(102, 51, 153, 0.662);
+}
+.table-head {
+    background-color: rgba(181, 234, 225, 0.343);
+}
+
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+tbody {
+    background-color: beige;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white;
+}

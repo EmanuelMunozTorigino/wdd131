@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bulding a table layout</title>
+
+    <meta name="author" content="Emanuel Muñoz Torigino"/>
+    <meta name="description" content="Practicing formatting tables in html"/>
+
+
+    <link rel="stylesheet" href="styles/tablebuild.css" />
+
+  </head>
+  <body>
+    <header>
+        <h1>Building a table layout</h1>
+    </header>
+        
+    <main>
+        <table class="table">
+            <caption class="table-caption">Table 1: Account Feature Comparison</caption>
+                        
+            <thead class="table-head">
+        
+                <tr>
+                    <th class="table-title" colspan="4" scope="colgroup">ACME Wildwest Services</th>
+                </tr>
+
+                <tr>
+                    
+                    <th scope="col"></th>
+                    <th scope="col">Basic</th>
+                    <th scope="col">Premium</th>
+                    <th scope="col">Deluxe</th>
+                </tr> 
+            </thead>    
+
+            <tbody>
+                <tr>
+                    <th scope="row" >Feature 1</th>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+    
+                </tr>
+                <tr>
+                    <th scope="row">Feature 2</th>
+                        <td>❌</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+             </tr>
+                <tr>
+                    <th scope="row">Feature 3</th>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                </tr>
+               </tbody>
+        </table>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
