@@ -19,7 +19,6 @@ img {
     filter: drop-shadow(5px 5px 3px black);
     opacity: .7;
     transition: 500ms;
-    animation: fade 15s;
 }
 
 img:hover {
