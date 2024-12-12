@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product review - Form building</title>
+    <meta name="description" content="a product review form to confirm to the user and overall the rating of each product"> <!-- less than 150 characters as a good practice of SEO-->
+    <meta name="author" content="Emanuel Muñoz Torigino">
+
+
+    <link rel="stylesheet" href="styles/form.css">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/productList.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head> 
+
+<body>
+    <header>
+    <h1>Product Review</h1>
+</header>
+
+     
+    <main>
+
+        <form method="get" action="review.html" class="wf1">
+    
+            <fieldset >
+                <legend>Product information</legend>
+                
+                <label for="products" >Product Name*</label>
+                    <select name="products" id="products" required >
+                        <option value="select" selected disabled  >Select a Product..</option>
+                    </select>
+                
+                
+                
+                <label>Overall Rating*</label>
+                <div class="stars" name="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+
+                <label for="date">Date of Installation*<input type="date" name="date" id="date" required></label>
+
+            
+                   
+                <label class="allApply" for="features">Which features did you find useful in the product? <br></label>
+                    <div name="features">
+                    <label id="checkbox-features" for="durability"><input type="checkbox" name="durability" id="durability" value="durability">Durability</label>
+                   
+                    <label id="checkbox-features" for="easeUse"><input type="checkbox" name="easeUse" id="easeUse" value="easeUse">Ease of Use</label>
+                    
+                    <label id="checkbox-features" for="performance"><input type="checkbox" name="performance" id="performance" value="performance">Performance</label>
+                    
+                    <label id="checkbox-features" for="design"><input type="checkbox" name="design" id="design" value="design">Design</label>
+                    </div>
+
+                    <label class="optional" for="written-review">Written Review</label>  
+                    
+                    <textarea id="written-review" name="written-review"></textarea>                  
+
+                    <label class="optional" for="userName">Your Name</label><input type="text" name="userName">
+
+                <input id="reviewButton" type="submit" value="Post Review"> 
+            </fieldset>
+            
+        </form>
+    
+
+    </main>
+
+
+    <footer>
+        <div class="flag-container">
+            <p class=".montserrat-para">&copy;<span id="year"></span> Emanuel Muñoz Torigino - Argentina</p>
+                <div class="container-AR-flag">
+                    <div class="first-lightblue-color-flag"></div>
+                    <div class="white-middle-color-flag"></div>
+                    <div class="sun-center-color-flag"></div>
+                    <div class="last-lightblue-color-flag"></div>
+                </div>            
+        </div>
+        <div>
+        <p class="lastModified-p .montserrat-para" id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

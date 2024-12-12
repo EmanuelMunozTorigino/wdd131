@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product review - Form building</title>
+    <meta name="description" content="a product review form to confirm to the user and overall the rating of each product"> <!-- less than 150 characters as a good practice of SEO-->
+    <meta name="author" content="Emanuel Muñoz Torigino">
+
+
+    <link rel="stylesheet" href="styles/form.css">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/localStorage.js" defer></script>
+</head> 
+
+<body>
+    <header>
+    <h1>Product Review</h1>
+</header>
+
+     
+    <main>
+
+        <div id="reviews"></div>
+
+    </main>
+
+
+    <footer>
+        <div class="flag-container">
+            <p class=".montserrat-para">&copy;<span id="year"></span> Emanuel Muñoz Torigino - Argentina</p>
+                <div class="container-AR-flag">
+                    <div class="first-lightblue-color-flag"></div>
+                    <div class="white-middle-color-flag"></div>
+                    <div class="sun-center-color-flag"></div>
+                    <div class="last-lightblue-color-flag"></div>
+                </div>            
+        </div>
+        <div>
+        <p class="lastModified-p .montserrat-para" id="lastModified"></p>
+        </div>
+    </footer>
+
+
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>
