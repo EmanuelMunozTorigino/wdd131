@@ -152,7 +152,7 @@ newFilter.addEventListener("click", () => {
 
 const largeFilter = document.getElementById("large");
 largeFilter.addEventListener("click", () => {
-  filterHeading.textContent = "Temples With an area greater than 90000 sq ft";
+  filterHeading.textContent = "Temples greater than 90000 sq ft";
   resetFunction();
   createTemple(temples.filter((temple) => temple.area > 90000));
 });
@@ -160,7 +160,7 @@ largeFilter.addEventListener("click", () => {
 const smallFilter = document.getElementById("small");
 smallFilter.addEventListener("click", () => {
   resetFunction();
-  filterHeading.textContent = "Temples With an area less than 10000 sq ft";
+  filterHeading.textContent = "Temples smaller than 10000 sq ft";
   createTemple(temples.filter((temple) => temple.area < 10000));
 });
 
