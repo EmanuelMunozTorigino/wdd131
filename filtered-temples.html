@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album | WDD 131</title>
+    <meta name="description" content="A temple album where you can find your favorite one (Practice of CSS grid Layout and some JS functionality) | WDD 131 – Dynamic Web Fundamentals"> <!-- less than 150 characters as a good practice of SEO-->
+    <meta name="author" content="Emanuel Muñoz Torigino">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <button id="ham-menu"></button>
+        <h1>Temple Album</h1>
+        <nav>
+        <ul id="nav-container">
+                <li class="nav-filter"><a href="#" id="home">Home</a></li>
+                <li class="nav-filter"><a href="#" id="old">Old</a></li>
+                <li class="nav-filter"><a href="#" id="new">New</a></li>
+                <li class="nav-filter"><a href="#" id="large">Large</a></li>
+                <li class="nav-filter"><a href="#" id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+    <main>
+        <h2 id="filter-heading">Home</h2>
+        <div id="temple-album">
+        </div>
+    </main>
+
+    <footer>
+        <div class="flag-container">
+                <div class="container-AR-flag">
+                    <div class="first-lightblue-color-flag"></div>
+                    <div class="white-middle-color-flag"></div>
+                    <div class="sun-center-color-flag"></div>
+                    <div class="last-lightblue-color-flag"></div>
+                </div>            
+        </div>
+        <div>
+        <p>&copy;<span id="year"></span> Emanuel Muñoz Torigino - Argentina</p>
+        <p>WDD 131 - Brigham Young University | <a href="https://www.byui.edu/" target="_blank">Idaho</a></p>
+        <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+@media screen and (min-width: 550px) {
+	
+	#ham-menu {
+		display: none; /* hide hamburger button */
+	}
+
+	#nav-container {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.nav-filter {
+		width: 100%;
+	}
+	.nav-filter a {
+		display: block;
+		width: 100%;
+	}
+
+	#temple-album {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+
+}
