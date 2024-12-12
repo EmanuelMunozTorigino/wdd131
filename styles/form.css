@@ -97,7 +97,7 @@ select,
     margin-right: 10px;
 }
 
-#checkbox-features  {
+.wf1 .checkbox-features {
     padding-top: .3rem;
 }
 
@@ -205,27 +205,6 @@ input[type="radio"] {
 .wf1 input:required:valid {
     border-left: 5px solid green ;
 }
-
-
-
-
-
-
-
-
-#formmessage {
-	visibility: none;
-	margin: 10px;
-	padding: 0.5rem;
-	color: red;
-}
-
-#password1:invalid {
-	background-color: #fff0f3;
-	animation: shaketext 500ms;
-}
-
-
 
 
 .argentina-flag {
