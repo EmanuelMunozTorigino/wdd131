@@ -3,6 +3,14 @@
     box-sizing: border-box;
 }
 
+.review-main-section {
+    margin-top: 2rem;
+    text-align: center;
+    height: 75vh;
+    font-size: large;
+    font-weight: bold;
+}
+
 
 header {
     background-color: rgb(0,0,0);
