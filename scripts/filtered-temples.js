@@ -113,6 +113,7 @@ const createTemple = (templeList) => {
     templeImg.setAttribute("alt", temple.templeName);
     templeImg.setAttribute("width", 300);
     templeImg.setAttribute("height", 200);
+    templeImg.setAttribute("loading", "lazy");
 
     articleContainer.appendChild(templeName);
     articleContainer.appendChild(location);
