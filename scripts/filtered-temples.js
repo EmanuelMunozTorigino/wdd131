@@ -110,7 +110,7 @@ const createTemple = (templeList) => {
 
     let templeImg = document.createElement("img");
     templeImg.setAttribute("src", temple.imageUrl);
-    templeImg.setAttribute("alt", temple.templeName);
+    templeImg.setAttribute("alt", `${temple.templeName} temple`);
     templeImg.setAttribute("width", 300);
     templeImg.setAttribute("height", 200);
     templeImg.setAttribute("loading", "lazy");
