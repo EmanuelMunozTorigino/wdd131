@@ -1,0 +1,93 @@
+
+
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+  }
+
+header {
+  background-color: #202020;
+  color: rgb(174, 0, 255);
+}
+  
+
+h1, h2 ,h3 {
+  text-align: center;
+  margin: 0;
+}
+
+#header-title {
+  display: block;
+  padding: 1rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .nav-link, .closebtn {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #f1f1f1;
+  }
+
+  .active {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #sidenavHam {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    font-size:30px;
+    cursor:pointer
+  }
+
+
+  #main {
+    transition: margin-left .5s;
+  }
+
+
+footer {
+  background-color: #202020;
+  text-align: center;
+  padding: .2rem;
+  color: white;
+}
+footer a{
+  color: rgb(174, 0, 255);
+  text-decoration: none;
+}
+
+#currentYear::after {
+  content: " ~AccessAI~";
+  color: rgb(174, 0, 255);
+}

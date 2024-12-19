@@ -171,3 +171,4 @@ home.addEventListener("click", () => {
   filterHeading.textContent = "Home";
   createTemple(temples);
 });
+
