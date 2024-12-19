@@ -26,7 +26,7 @@
   <header>
     <span id="sidenavHam">&#9776;</span>
     <span id="header-title">AccessAI</h1>
-    <img src="images/chat-bot.png" alt="A representation of a chatbot" width="16" height="16">
+    <img src="images/chat-bot.png" alt="A representation of a chatbot" width="24" height="24">
     <nav id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn">&times;</a>
       <a href="index.html" class="nav-link">Home</a>
@@ -34,11 +34,46 @@
       <a href="#" class="nav-link active">Participation</a>
     </nav>
   </header>
-  <h1>Building a web for everyone, everywhere</h1>
-  <h1>Accessibility Matters: Empowering Everyone Online</h1>
   <main>
-      <p>Your gateway to understanding and embracing web accessibility.</p>
-    </main>
+    <h1>the change that really matters</h1>
+    <p class="center">Please help us improve the accessibility of our website by filling out this form:</p>
+    
+    <div class="form-container">
+    <form action="suggestions.html" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+      <label for="category">Accessibility Category:</label>
+      <select id="category" name="category">
+        <option value="visual">Visual</option>
+        <option value="auditory">Auditory</option>
+        <option value="motor">Motor</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label>Priority of Suggestion:</label>
+      <label for="critical">Critical</label>
+      <input class="radio" type="radio" id="critical" name="priority" value="critical">
+      <label for="important">Important</label>
+      <input class="radio" type="radio" id="important" name="priority" value="important">
+      <label for="optional">Optional</label>
+      <input class="radio" type="radio" id="optional" name="priority" value="optional">
+
+      <label>
+        I have experienced accessibility issues on this website.
+        <input class="checkbox" type="checkbox" name="experienced_issues" value="yes">
+      </label>
+
+      <label for="suggestions">Type here the suggestions that could make the website more accessible to someone with difficulties?</label>
+      <textarea id="suggestions" name="suggestions" rows="5" placeholder="Write your suggestion here" required></textarea>
+
+      <button type="submit">Submit Suggestion</button>
+    </form>
+  </div>
+  </main>
   
 
     <footer>

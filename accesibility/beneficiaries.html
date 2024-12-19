@@ -26,7 +26,7 @@
   <header>
     <span id="sidenavHam">&#9776;</span>
     <span id="header-title">AccessAI</h1>
-    <img src="images/chat-bot.png" alt="A representation of a chatbot" width="16" height="16">
+    <img src="images/chat-bot.png" alt="A representation of a chatbot" width="24" height="24">
     <nav id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn">&times;</a>
       <a href="index.html" class=" nav-link">Home</a>
@@ -34,9 +34,81 @@
       <a href="participation.html" class="nav-link">Participation</a>
     </nav>
   </header>
-  <h1>Building a web for everyone, everywhere</h1>
-  <main>
-      <p>Your gateway to understanding and embracing web accessibility.</p>
+  <main class="main-content">
+    <h1>Building a web for everyone, everywhere</h1>
+
+  <!-- Accessibility for motor disabilities -->
+  <article class="disabilities-article">
+    <h2>For Motor Disabilities</h2>
+    <section>
+      <h3>Keyboard Navigation</h3>
+      <p>Use <code>Tab</code> and <code>Enter</code> to navigate this list of links:</p>
+      <ul>
+        <li><a href="#section1" class="focus-visible">Section 1</a></li>
+        <li><a href="#section2" class="focus-visible">Section 2</a></li>
+        <li><a href="#section3" class="focus-visible">Section 3</a></li>
+      </ul>
+    </section>
+    <hr>
+    <section>
+      <h3>Large Buttons</h3>
+      <button class="large-button focus-visible">Click Me!</button>
+    </section>
+  </article>
+  <!-- Accessibility for visual disabilities -->
+  <article class="disabilities-article">
+    <h2>For Visual Disabilities</h2>
+    <section>
+      <h3>Alt Text for Images</h3>
+      <p>Below is an example of an image with descriptive alt text:</p>
+      <img src="example.jpg" alt="A person using a wheelchair typing on a laptop" width="300">
+    </section>
+    <hr>
+    <section>
+      <h3>High Contrast Design</h3>
+      <p class="high-contrast">This is an example of high-contrast text on a dark background.</p>
+    </section>
+  </article>
+  <!-- Accessibility for hearing disabilities -->
+  <article class="disabilities-article">
+    <h2>For Hearing Disabilities</h2>
+    <section>
+      <h3>Subtitled Video</h3>
+      <p>Watch this video with subtitles:</p>
+      <video controls>
+        <source src="example.mp4" type="video/mp4">
+        <track src="example_subtitles.vtt" kind="subtitles" srclang="en" label="English">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+  </article>
+
+  <!-- Accessibility for cognitive disabilities -->
+  <article class="disabilities-article">
+    <h2>For Cognitive Disabilities</h2>
+    <section>
+      <h3>Simple Instructions</h3>
+      <p>Clear and simple instructions for a form:</p>
+      <form class="disabilities-form">
+        <label for="name">Enter your name:</label><br>
+        <input type="text" id="name" name="name" class="focus-visible"><br>
+        <label for="email">Enter your email:</label><br>
+        <input type="email" id="email" name="email" class="focus-visible"><br>
+        <button type="submit" class="large-button focus-visible">Submit</button>
+      </form>
+    </section>
+  </article>
+
+  <!-- Accessibility for epilepsy -->
+  <article class="disabilities-article">
+    <h2>For Users with Epilepsy</h2>
+    <section>
+      <h3>Non-Flashing Animations</h3>
+      <p>This site avoids using flashing animations. Here's an example of a smooth, non-intrusive animation:</p>
+      <div class="non-flashing-animation"></div>
+    </section>
+  </article>
+
     </main>
   
 
