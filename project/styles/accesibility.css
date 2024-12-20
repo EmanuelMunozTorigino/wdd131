@@ -8,6 +8,7 @@ body {
 header {
   background-color: #202020;
   color: rgb(174, 0, 255);
+  text-align: center;
 }
   
 
@@ -22,8 +23,8 @@ h1, h2 ,h3 {
 }
 
 #header-title {
-  padding: 1rem 0;
-  display: block;
+  display: inline-block;
+  padding: .5rem 0;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
