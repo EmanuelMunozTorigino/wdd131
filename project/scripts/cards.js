@@ -56,7 +56,7 @@ const displayVideos = (videos) => {
 
     const likeButton = document.createElement("button");
     likeButton.classList.add("like-button");
-    likeButton.innerHTML = `<img src="images/like.png" alt="Like" style="width: 16px;">`;
+    likeButton.innerHTML = `<img src="images/like.png" alt="Like" loading="lazy" style="width: 16px;">`;
 
     const likeCount = document.createElement("p");
     likeCount.textContent = `${storedData.likes} Likes `;
@@ -70,7 +70,7 @@ const displayVideos = (videos) => {
 
     const dislikeButton = document.createElement("button");
     dislikeButton.classList.add("dislike-button");
-    dislikeButton.innerHTML = `<img src="images/dislike.webp" alt="Dislike" style="width: 16px;">`;
+    dislikeButton.innerHTML = `<img src="images/dislike.webp" alt="Dislike" loading="lazy" style="width: 16px;">`;
 
     const dislikeCount = document.createElement("p");
     dislikeCount.textContent = `${storedData.dislikes} Dislikes `;
