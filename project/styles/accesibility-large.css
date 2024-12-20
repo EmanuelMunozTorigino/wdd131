@@ -15,7 +15,17 @@
     padding: 0;
   }
 
+  #videosContainer {
+    width: 800px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .gpt-container p{
+  max-width: 500px;
+}
 
+.gpt-image {
+  max-width: 500px;
+}
   .closebtn {
     display: none;
   }

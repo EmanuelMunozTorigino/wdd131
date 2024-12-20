@@ -75,31 +75,35 @@ h1, h2 ,h3 {
     cursor:pointer
   }
 
-
+/*
   #main {
     transition: margin-left .5s;
   }
-
+*/
   /*                HOME PAGE -- MAIN CONTENT                        */
 
 
-  
-.providers-container {
+
+#videosContainer {
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill , minmax(350px , 1fr));
+  grid-template-columns: 1fr;
   grid-gap: 1.5rem .5rem;
-  margin-bottom: 1.5rem;  
+  margin-bottom: 1.5rem;
+  justify-content: center;
+
 }
 
 .card-providers {
-margin: 0 auto;
 overflow: hidden;
-width: 350px;
+max-width: 350px;
+margin: auto;
 height: fit-content;
 border: 2px solid;
 border-radius: 10px;
 margin-bottom: 1rem;
 }
+
 
 .card-providers:hover {
 transform: scale(1.05);
@@ -154,6 +158,26 @@ border: solid 1px;
 .provider-info-button:hover {
 background-color: #fff;
 color: #1C3D5A;
+}
+
+.gpt-container {
+  text-align: center;
+}
+
+
+.gpt-container p{
+  border: 2px solid;
+  background-color: beige;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: .5rem;
+ max-width: 350px;
+ margin: .5rem auto;
+}
+
+.gpt-image {
+  max-width: 350px;
+  height: auto;
 }
 
 
@@ -213,6 +237,9 @@ button:hover {
 
 .disabilities-article {
   border-bottom: 2px solid;
+}
+.disabilities-article:last-child {
+border-bottom: none;
 }
 
 
