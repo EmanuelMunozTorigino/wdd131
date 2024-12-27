@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enviar mensaje por WhatsApp</title>
+</head>
+<body>
+  <!-- Botón que se genera dinámicamente -->
+  <button id="sendMessageButton">Enviar mensaje por WhatsApp</button>
+
+  <script>
+    // Número de teléfono y mensaje
+    const phoneNumber = "5492477662351"; // Número en formato internacional (sin + ni espacios)
+    const message = "Hola Santii, soy Emanuel Muñoz. Tu reserva para el viaje del [Fecha] a las [Hora] ha sido confirmada. ¡Nos vemos pronto! "; // Mensaje que deseas enviar
+
+    // Referencia al botón
+    const button = document.getElementById("sendMessageButton");
+
+    // Evento click en el botón
+    button.addEventListener("click", () => {
+      // Codificar el mensaje para que sea compatible con la URL
+      const encodedMessage = encodeURIComponent(message);
+
+      // Crear el enlace de WhatsApp
+      const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+      // Abrir el enlace en una nueva pestaña
+      window.open(whatsappLink, "_blank");
+    });
+  </script>
+</body>
+</html>
